@@ -10,107 +10,25 @@
 		(comment 1 "PCB for 5 cm Kosmo format synthesizer module")
 	)
 	(lib_symbols)
-	(sheet
-		(at 260.35 16.51)
-		(size 20.32 27.94)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "0cdf34b2-39cd-4d9e-981a-97cd34791509")
-		(property "Sheetname" "Power"
-			(at 260.35 15.7984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Power.kicad_sch"
-			(at 260.35 45.0346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "Bus Gate" output
-			(at 260.35 25.4 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "35434339-bc2b-4868-9a18-95483283b276")
-		)
-		(pin "Bus CV" output
-			(at 260.35 34.29 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "0197176f-d754-4695-b74f-89d14faa0aea")
-		)
-		(instances
-			(project "DMH-Kosmo-5cm-PCB"
-				(path "/58f4306d-5387-4983-bb08-41a2313fd315"
-					(page "4")
-				)
-			)
-		)
+	(no_connect
+		(at 38.1 101.6)
+		(uuid "055c5cb4-ca6e-4bbe-a7c7-db4d98492764")
+	)
+	(no_connect
+		(at 38.1 85.09)
+		(uuid "39a85dfb-4aad-423b-b2b7-fd579c3265cd")
+	)
+	(no_connect
+		(at 38.1 88.9)
+		(uuid "4e7cf7ae-c8d3-46a6-beb9-60db59f9e81f")
+	)
+	(no_connect
+		(at 38.1 105.41)
+		(uuid "7a526f25-1714-4a80-bfbd-edf54b838541")
 	)
 	(sheet
-		(at 120.65 80.01)
-		(size 41.91 38.1)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7ad2d702-dfb7-4d49-a82d-34430dd5948f")
-		(property "Sheetname" "Core Circuit"
-			(at 120.65 79.2984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Core_Circuit.kicad_sch"
-			(at 120.65 118.6946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "DMH-Kosmo-5cm-PCB"
-				(path "/58f4306d-5387-4983-bb08-41a2313fd315"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 17.78 17.78)
-		(size 20.32 118.11)
+		(at 16.51 76.2)
+		(size 21.59 38.1)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -121,7 +39,7 @@
 		)
 		(uuid "ce3fef8b-9f1d-4178-b50b-4a046c030679")
 		(property "Sheetname" "Inputs and Outputs"
-			(at 17.78 17.0684 0)
+			(at 16.51 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -130,7 +48,7 @@
 			)
 		)
 		(property "Sheetfile" "Inputs_and_Outputs.kicad_sch"
-			(at 17.78 136.4746 0)
+			(at 16.51 114.8846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -139,8 +57,48 @@
 				(hide yes)
 			)
 		)
+		(pin "Att B Output Jack" input
+			(at 38.1 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a3cf45dc-535a-4229-9325-dbe02c615116")
+		)
+		(pin "Att B Input Jack" output
+			(at 38.1 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c7e095ee-ec76-4c5c-a1c9-d312a484409d")
+		)
+		(pin "Att A Input Jack" output
+			(at 38.1 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "435e7c20-1fe0-4be6-a078-183635d0f241")
+		)
+		(pin "Att A Output Jack" input
+			(at 38.1 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f0334ec6-75fc-4737-afe0-cb82f6c50cdb")
+		)
 		(instances
-			(project "DMH-Kosmo-5cm-PCB"
+			(project "DMH_Multiverter_PCB_Conn"
 				(path "/58f4306d-5387-4983-bb08-41a2313fd315"
 					(page "2")
 				)
