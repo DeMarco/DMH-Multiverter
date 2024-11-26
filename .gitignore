@@ -16,6 +16,8 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+\#auto_saved_files#
+*.lck
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -27,3 +29,16 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# Microchip Studio 7
+*.atsuo
+*.eep
+*.elf
+*.lss
+*.map
+*.srec
+*.d
+*.o
+*.mk
+Makefile
+*.txt
