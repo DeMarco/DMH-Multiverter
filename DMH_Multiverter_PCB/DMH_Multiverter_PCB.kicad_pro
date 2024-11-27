@@ -58,7 +58,15 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|88000000|48250000|d51e6fc4-a8a1-4b31-9351-27b5f415dfdf|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|69929143|63965123|1e720bdb-0bca-46f3-98fe-6ff081374a4f|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|78225336|86849303|d3d98b5c-58f7-496e-aca9-e0dfb6714f14|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|78274450|72936433|db150206-72a9-4ce7-84af-4427720d386b|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|92090975|66212856|c226dacd-ddc9-4a89-b296-9c8de2ba31c7|00000000-0000-0000-0000-000000000000",
+        "silk_overlap|94568419|53846996|da48a95f-2cfb-46b7-9eb9-a056d634c671|65444015-75b7-4dcd-ab55-c89c25b56460",
+        "silk_overlap|94568419|53846996|f28ac11c-2157-4f85-a465-80f370bdf452|65444015-75b7-4dcd-ab55-c89c25b56460"
+      ],
       "meta": {
         "version": 2
       },
@@ -445,7 +453,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "DMH-Kosmo-5cm-PCB.kicad_pro",
+    "filename": "DMH_Multiverter_PCB.kicad_pro",
     "version": 1
   },
   "net_settings": {

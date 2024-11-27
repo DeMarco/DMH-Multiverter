@@ -1399,7 +1399,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SynthStuff:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "SynthStuff:Potentiometer_TT_P110KH1"
 			(at 44.45 44.45 0)
 			(effects
 				(font
@@ -1424,6 +1424,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Function" ""
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1674,7 +1682,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SynthStuff:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "SynthStuff:Potentiometer_TT_P110KH1"
 			(at 44.45 95.25 0)
 			(effects
 				(font
@@ -1699,6 +1707,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Function" ""
+			(at 44.45 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1781,22 +1797,22 @@
 			)
 		)
 		(pin "7"
-			(uuid "b4f6d98c-ae8c-403f-bb25-8444c10bc685")
+			(uuid "b4f6d98c-ae8c-403f-bb25-8444c10bc686")
 		)
 		(pin "6"
-			(uuid "28743d8e-57ca-4be5-a26a-bc106957a727")
+			(uuid "28743d8e-57ca-4be5-a26a-bc106957a728")
 		)
 		(pin "8"
-			(uuid "df15d728-36a5-4172-ac7b-7bc1e10ecbed")
+			(uuid "df15d728-36a5-4172-ac7b-7bc1e10ecbee")
 		)
 		(pin "1"
 			(uuid "29f993a9-7636-4180-b5b9-6d612b7f87a5")
 		)
 		(pin "4"
-			(uuid "ac0ccb54-78d3-4671-93d2-3b72193ee2f4")
+			(uuid "ac0ccb54-78d3-4671-93d2-3b72193ee2f5")
 		)
 		(pin "5"
-			(uuid "fb3814a0-f6ad-4ccf-abde-748187c86ca1")
+			(uuid "fb3814a0-f6ad-4ccf-abde-748187c86ca2")
 		)
 		(pin "3"
 			(uuid "9ac8b1d6-578e-4db5-8acb-7048ea226a65")
