@@ -216,7 +216,7 @@
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim yes)
-			(in_bom no)
+			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "H"
 				(at 0 6.35 0)
@@ -2396,7 +2396,7 @@
 		(at 63.5 77.47 0)
 		(unit 1)
 		(exclude_from_sim yes)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2664,7 +2664,7 @@
 		(at 63.5 52.07 0)
 		(unit 1)
 		(exclude_from_sim yes)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
