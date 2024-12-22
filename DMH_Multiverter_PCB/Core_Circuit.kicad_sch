@@ -740,6 +740,12 @@
 		)
 	)
 	(junction
+		(at 64.77 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0176d5e0-58c8-4d2e-8fdc-4c805667fa40")
+	)
+	(junction
 		(at 64.77 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -762,6 +768,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42d0fb47-7fb3-4e84-b814-26c8d923d47f")
+	)
+	(junction
+		(at 64.77 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e5b03a5-bd39-4b1a-8461-4dd93d6e1f4a")
 	)
 	(junction
 		(at 44.45 35.56)
@@ -877,6 +889,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 76.2) (xy 64.77 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f82a49-df70-494a-a380-30775f2fb592")
+	)
+	(wire
+		(pts
 			(xy 64.77 95.25) (xy 64.77 91.44)
 		)
 		(stroke
@@ -904,6 +926,16 @@
 			(type default)
 		)
 		(uuid "5b0207e3-6516-495b-855a-641eb1566a0e")
+	)
+	(wire
+		(pts
+			(xy 57.15 25.4) (xy 64.77 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ac21774-e959-46d2-9884-0b663e643c51")
 	)
 	(wire
 		(pts
@@ -997,6 +1029,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 82.55) (xy 57.15 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aebbb664-8e70-48a2-970e-a90f4a85f1ef")
+	)
+	(wire
+		(pts
 			(xy 87.63 88.9) (xy 83.82 88.9)
 		)
 		(stroke
@@ -1004,6 +1046,16 @@
 			(type default)
 		)
 		(uuid "b1a611fd-d5e5-4bed-9855-3d66ef0db9c8")
+	)
+	(wire
+		(pts
+			(xy 57.15 31.75) (xy 57.15 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5d97801-2979-495d-a07e-10707488d6a1")
 	)
 	(wire
 		(pts
@@ -1144,74 +1196,6 @@
 		(uuid "aa675d0c-c3ec-41ea-8e96-dd540a606d87")
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 57.15 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1404ce7c-baeb-4e2c-8a29-96487a7c1744")
-		(property "Reference" "R4"
-			(at 57.15 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 57.15 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 57.404 85.344 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 57.15 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a1f8833-cd84-4478-992c-8560f6e8f948")
-		)
-		(pin "2"
-			(uuid "893db5c7-3da3-44fd-bbde-33a118c8d203")
-		)
-		(instances
-			(project "DMH_Multiverter_PCB"
-				(path "/58f4306d-5387-4983-bb08-41a2313fd315/7ad2d702-dfb7-4d49-a82d-34430dd5948f"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 44.45 104.14 0)
 		(unit 1)
@@ -1272,6 +1256,146 @@
 			(project "DMH_Multiverter_PCB"
 				(path "/58f4306d-5387-4983-bb08-41a2313fd315/7ad2d702-dfb7-4d49-a82d-34430dd5948f"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_US")
+		(at 57.15 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4274223d-e235-4678-84e5-fec976d532e6")
+		(property "Reference" "RV4"
+			(at 57.15 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50k"
+			(at 57.15 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer, US symbol"
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8b9a4a89-3ff8-48af-a1ef-beb2d4ebc5e7")
+		)
+		(pin "2"
+			(uuid "e9777fee-738f-4282-a6da-2812b88bfa89")
+		)
+		(pin "1"
+			(uuid "b1fdacfe-c56a-4c4f-bd8b-7e529491c801")
+		)
+		(instances
+			(project "DMH_Multiverter_PCB"
+				(path "/58f4306d-5387-4983-bb08-41a2313fd315/7ad2d702-dfb7-4d49-a82d-34430dd5948f"
+					(reference "RV4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_US")
+		(at 57.15 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43e8a9e6-7e7f-4990-9f54-82ba831c02f5")
+		(property "Reference" "RV3"
+			(at 57.15 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50k"
+			(at 57.15 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
+			(at 57.15 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer, US symbol"
+			(at 57.15 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "de436369-4f1e-4a17-b41b-24c62a7ed569")
+		)
+		(pin "2"
+			(uuid "1d6726b9-a753-4459-9a5c-676e8e131aa1")
+		)
+		(pin "1"
+			(uuid "013facae-6e40-4e3b-8b67-b1449806fc64")
+		)
+		(instances
+			(project ""
+				(path "/58f4306d-5387-4983-bb08-41a2313fd315/7ad2d702-dfb7-4d49-a82d-34430dd5948f"
+					(reference "RV3")
 					(unit 1)
 				)
 			)
@@ -1447,74 +1571,6 @@
 			(project ""
 				(path "/58f4306d-5387-4983-bb08-41a2313fd315/7ad2d702-dfb7-4d49-a82d-34430dd5948f"
 					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 57.15 35.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f54214e-219a-4b4d-97c1-f79677b783df")
-		(property "Reference" "R1"
-			(at 57.15 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 57.15 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 57.404 34.544 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 57.15 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3a30bb5-6593-4682-9d53-579f2ade3fcd")
-		)
-		(pin "2"
-			(uuid "1e4e5985-4e24-4c83-ab10-f7b181f97ffc")
-		)
-		(instances
-			(project ""
-				(path "/58f4306d-5387-4983-bb08-41a2313fd315/7ad2d702-dfb7-4d49-a82d-34430dd5948f"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1847,7 +1903,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "33k"
 			(at 76.2 72.39 90)
 			(effects
 				(font
@@ -1983,7 +2039,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "33k"
 			(at 76.2 21.59 90)
 			(effects
 				(font
