@@ -2419,7 +2419,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SynthStuff:Pot_Cutout_Small_attv"
+		(property "Footprint" "SynthStuff:Pot_Cutout_Small_attv_P110KH1"
 			(at 63.5 77.47 0)
 			(effects
 				(font
@@ -2687,7 +2687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SynthStuff:Pot_Cutout_Small_attv"
+		(property "Footprint" "SynthStuff:Pot_Cutout_Small_attv_P110KH1"
 			(at 63.5 52.07 0)
 			(effects
 				(font
