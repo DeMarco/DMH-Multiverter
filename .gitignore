@@ -41,4 +41,3 @@ fp-info-cache
 *.o
 *.mk
 Makefile
-*.txt
