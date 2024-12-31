@@ -3579,7 +3579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c49b0d5-24bb-4603-ba28-91f8e77afddc")
-		(property "Reference" "R7"
+		(property "Reference" "R5"
 			(at 114.3 234.95 90)
 			(effects
 				(font
@@ -3631,7 +3631,7 @@
 		(instances
 			(project "DMH_Multiverter_PCB"
 				(path "/58f4306d-5387-4983-bb08-41a2313fd315/ce3fef8b-9f1d-4178-b50b-4a046c030679"
-					(reference "R7")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3645,7 +3645,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5d2d02f7-9c0f-4418-a2f3-71e5d0f05a01")
 		(property "Reference" "D3"
 			(at 101.6 234.95 0)
@@ -3690,11 +3689,14 @@
 				(hide yes)
 			)
 		)
-		(property "Function" ""
-			(at 101.6 241.3 0)
+		(property "Function" "5V1"
+			(at 101.6 244.856 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(italic yes)
 				)
 			)
 		)
