@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "58f4306d-5387-4983-bb08-41a2313fd315")
 	(paper "A4")
 	(title_block
@@ -53,6 +53,10 @@
 	(sheet
 		(at 101.6 93.98)
 		(size 20.32 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -92,6 +96,10 @@
 	(sheet
 		(at 50.8 88.9)
 		(size 38.1 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -122,43 +130,43 @@
 		)
 		(pin "Att B Output" output
 			(at 50.8 115.57 180)
+			(uuid "a3869495-cd33-40f7-8475-e86a7a4bb063")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a3869495-cd33-40f7-8475-e86a7a4bb063")
 		)
 		(pin "Att A Output" output
 			(at 50.8 104.14 180)
+			(uuid "e3902b18-0b93-42d9-bb29-b671e69e7280")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e3902b18-0b93-42d9-bb29-b671e69e7280")
 		)
 		(pin "Att A Input" input
 			(at 50.8 100.33 180)
+			(uuid "01e7d4a3-2269-4a88-bfc1-1cb1cabe8213")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "01e7d4a3-2269-4a88-bfc1-1cb1cabe8213")
 		)
 		(pin "Att B Input" input
 			(at 50.8 111.76 180)
+			(uuid "6c6aa2e1-fb98-4a5b-a8b8-c36d3e773596")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6c6aa2e1-fb98-4a5b-a8b8-c36d3e773596")
 		)
 		(instances
 			(project "DMH_Multiverter_PCB"
@@ -171,6 +179,10 @@
 	(sheet
 		(at 16.51 88.9)
 		(size 21.59 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -201,43 +213,43 @@
 		)
 		(pin "Att A Output Jack" input
 			(at 38.1 104.14 0)
+			(uuid "a18130e2-9677-4b7f-a15a-94466c84fbd8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a18130e2-9677-4b7f-a15a-94466c84fbd8")
 		)
 		(pin "Att B Input Jack" output
 			(at 38.1 111.76 0)
+			(uuid "ba069d2d-0bb8-4d7c-919b-a8cdbf240058")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ba069d2d-0bb8-4d7c-919b-a8cdbf240058")
 		)
 		(pin "Att A Input Jack" output
 			(at 38.1 100.33 0)
+			(uuid "eae70a21-9d8f-4d3c-97e4-da93d315b74e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "eae70a21-9d8f-4d3c-97e4-da93d315b74e")
 		)
 		(pin "Att B Output Jack" input
 			(at 38.1 115.57 0)
+			(uuid "97684686-64e7-48a7-890b-edbd6cf0a2f5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "97684686-64e7-48a7-890b-edbd6cf0a2f5")
 		)
 		(instances
 			(project "DMH_Multiverter_PCB"
@@ -252,4 +264,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
