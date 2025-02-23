@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -14,34 +14,34 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user "User.LayoutGuide")
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user "User.FrontPanelEdge")
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user "User.LayoutGuide")
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user "User.FrontPanelEdge")
 	)
 	(setup
 		(stackup
@@ -85,10 +85,11 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(grid_origin 50 30)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes yes)
@@ -98,7 +99,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -106,16 +106,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -170,19 +174,6 @@
 				)
 			)
 		)
-		(property "Footprint" "SynthStuff:Potentiometer_TT_P110KH1"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3631c0bf-8c3d-4b3f-93e4-161eecff1dab")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -224,7 +215,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/5ed7b237-52b4-4f7d-9fec-f316f765fbd2")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -504,7 +495,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "b6da043e-6cb0-45c1-b454-8b483d9aa3cb")
 		)
@@ -515,7 +506,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "3621019c-3f79-45f6-a43b-e7f2427a2a0f")
 		)
@@ -587,6 +578,7 @@
 			(pintype "passive")
 			(uuid "c4597a2e-f82c-4eca-b3ea-83f764f74a13")
 		)
+		(embedded_fonts no)
 		(model "${KIPRJMOD}/Libraries/SynthStuff/3D_models/P110KH1_0F15BR10K.STEP"
 			(offset
 				(xyz 2.5 11 6)
@@ -625,19 +617,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3379dd66-bd1e-4c29-ba12-3c705b614a92")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -683,7 +662,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/2569edd0-1c9d-49fe-b01a-8ea1b7b9a0d7")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole exclude_from_bom dnp)
 		(fp_line
@@ -858,6 +837,7 @@
 			(pintype "passive")
 			(uuid "7e66f5c5-ed86-4189-8257-cb08e6a8aaed")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -893,19 +873,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SynthStuff:Potentiometer_TT_P110KH1"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6cbbfea2-c771-4b27-87fe-9d52a86ee9d0")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -951,7 +918,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/b32a27e2-7728-4468-bb92-c43e9fe3ea42")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1231,7 +1198,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "f19b9ef8-d4c9-4ede-b052-587df25fe244")
 		)
@@ -1242,7 +1209,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "cf26eb72-d542-4a5a-a8df-6e5d9b2dfd50")
 		)
@@ -1314,6 +1281,7 @@
 			(pintype "passive")
 			(uuid "589419f4-bfdd-4718-81a7-d8f1f73404ea")
 		)
+		(embedded_fonts no)
 		(model "${KIPRJMOD}/Libraries/SynthStuff/3D_models/P110KH1_0F15BR10K.STEP"
 			(offset
 				(xyz 2.5 11 6)
@@ -1356,22 +1324,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "88ae7e1a-7acd-4e82-9847-9a22452f114c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -1385,7 +1339,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -1400,7 +1354,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ce3fef8b-9f1d-4178-b50b-4a046c030679/5c49b0d5-24bb-4603-ba28-91f8e77afddc")
-		(sheetname "Inputs and Outputs")
+		(sheetname "/Inputs and Outputs/")
 		(sheetfile "Inputs_and_Outputs.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1595,6 +1549,7 @@
 			(pintype "passive")
 			(uuid "2fd296a3-c838-4599-86d2-f9c4ba478fa3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1637,20 +1592,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ef426788-a444-48ad-b710-64b19f92fd19")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -1681,7 +1622,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/06a92081-bbbd-41c1-8144-0a0d2b4e317a")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1856,6 +1797,7 @@
 			(pintype "passive")
 			(uuid "3c55238f-4544-472d-ac22-cfc98beb89da")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1893,20 +1835,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "3368d528-fbe4-41dd-9491-e72df92c68f5")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -1956,7 +1884,7 @@
 		)
 		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/d7192a66-d7e1-4061-a857-478008dedee6")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2288,6 +2216,7 @@
 			(pintype "power_in")
 			(uuid "84519aef-4a85-4d79-93a6-4c1679775dd1")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm_Socket.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2330,20 +2259,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "8ddeb7f8-cafa-49d9-ad2b-2379df389210")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -2374,7 +2289,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/66bf0572-e84a-48fe-9f46-ce03a606a30d")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2549,6 +2464,7 @@
 			(pintype "passive")
 			(uuid "0356b002-90ef-4f6a-9a18-0f6f14f97c08")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2591,20 +2507,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ac963799-c5c6-43d5-b4c8-1c9f8c16ebc3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -2635,7 +2537,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/6dbbe943-4ffa-408e-8e32-bcbfdca68a16")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2830,6 +2732,7 @@
 			(pintype "passive")
 			(uuid "d8aa4c35-276f-4f79-b6de-0b1669f63420")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2872,20 +2775,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "e6d65405-d8b4-44b7-aec2-c710d0d3c42c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds23022.pdf"
 			(at 0 0 90)
 			(unlocked yes)
@@ -2916,7 +2805,7 @@
 		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/f739b540-f531-48c2-9da2-1846171734a1")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3185,6 +3074,7 @@
 			(pintype "power_out")
 			(uuid "947d69a6-9262-4eda-92a4-c9b056fc98f2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3228,22 +3118,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "a003673e-72d9-4a28-a306-0e861271fa9b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3257,7 +3133,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3272,7 +3148,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ce3fef8b-9f1d-4178-b50b-4a046c030679/a91b4d6e-8074-44aa-b12a-144a4284cb34")
-		(sheetname "Inputs and Outputs")
+		(sheetname "/Inputs and Outputs/")
 		(sheetfile "Inputs_and_Outputs.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3503,6 +3379,7 @@
 			(pintype "passive")
 			(uuid "519c22a8-69b0-49fd-9453-3dbe8785deef")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x06_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3522,7 +3399,7 @@
 		(descr "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
 		(tags "Potentiometer vertical Bourns 3296W")
 		(property "Reference" "RV3"
-			(at -8.3 0 360)
+			(at -8.3 0 0)
 			(layer "B.SilkS")
 			(uuid "68592f2f-3890-421e-9b7d-f87699c5e8fc")
 			(effects
@@ -3540,20 +3417,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "0e21db06-cbaa-46ff-9423-244a9b41c1b7")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -3588,7 +3451,7 @@
 			)
 		)
 		(property "Function" "Zero Adj A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3603,7 +3466,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/43e8a9e6-7e7f-4990-9f54-82ba831c02f5")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3753,7 +3616,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.Fab")
 			(uuid "f8c15fbd-3d19-485d-ba95-429229424893")
 		)
@@ -3802,6 +3665,7 @@
 			(pintype "passive")
 			(uuid "3447227c-0df9-4b18-931c-b71f1acaa4f7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Bourns_3296W_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3844,22 +3708,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "4c8644e4-562c-491e-a4bc-5b406f9a8913")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3873,7 +3723,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3888,7 +3738,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/ead76231-01d2-4c93-8a9f-900be35c431b")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4083,6 +3933,7 @@
 			(pintype "passive")
 			(uuid "dab217f6-be0c-4c40-8302-db5197a1cc56")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4126,20 +3977,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "b4850650-e46e-4e8c-a40d-e09f172056ab")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -4170,7 +4007,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ce3fef8b-9f1d-4178-b50b-4a046c030679/2d4dbc72-5fe8-4c2b-8471-c302b06ba1cb")
-		(sheetname "Inputs and Outputs")
+		(sheetname "/Inputs and Outputs/")
 		(sheetfile "Inputs_and_Outputs.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4401,6 +4238,7 @@
 			(pintype "passive")
 			(uuid "ba2043e7-decd-473e-aecb-5dfccb2c9995")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x06_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4443,22 +4281,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "a69fc5c1-8f03-447f-a4dc-17796cab702d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds23022.pdf"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4472,7 +4296,7 @@
 			)
 		)
 		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4487,7 +4311,7 @@
 		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/afcc00aa-3a62-48c9-9a4f-17a08273dc96")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4756,6 +4580,7 @@
 			(pintype "power_in")
 			(uuid "20d9ed84-f5d2-42d5-b6ca-93f872b72627")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4775,7 +4600,7 @@
 		(descr "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
 		(tags "Potentiometer vertical Bourns 3296W")
 		(property "Reference" "RV4"
-			(at 3.45 0 360)
+			(at 3.45 0 0)
 			(layer "B.SilkS")
 			(uuid "97a53a41-28cd-42da-837a-691a77724d6a")
 			(effects
@@ -4793,20 +4618,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "147e8e3d-e8c9-4ecf-a26a-392abcb422c5")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -4841,7 +4652,7 @@
 			)
 		)
 		(property "Function" "Zero Adj B"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4856,7 +4667,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/4274223d-e235-4678-84e5-fec976d532e6")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5006,7 +4817,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.Fab")
 			(uuid "518c5b91-ae69-4ac8-84b3-542f77cd2751")
 		)
@@ -5055,6 +4866,7 @@
 			(pintype "passive")
 			(uuid "129feca4-db1e-4c9b-8786-ff69fc653ee1")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Bourns_3296W_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5086,7 +4898,7 @@
 			)
 		)
 		(property "Value" "47uF"
-			(at -3.794887 2 -90)
+			(at -3.794887 2 270)
 			(layer "B.SilkS")
 			(uuid "55c28efb-e825-463d-901d-0c10a5b8803c")
 			(effects
@@ -5097,22 +4909,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "48ea32aa-220c-4faf-b937-aa31f3cd90f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5126,7 +4924,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5141,7 +4939,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/17f931fa-aa5a-4951-b583-54db7f8f11d2")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6341,7 +6139,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.SilkS")
 			(uuid "65444015-75b7-4dcd-ab55-c89c25b56460")
 		)
@@ -6352,7 +6150,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.CrtYd")
 			(uuid "7eef9ec1-5fd8-4ab7-af21-fd67f12a58a0")
 		)
@@ -6383,7 +6181,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.Fab")
 			(uuid "00e68c54-e9b3-45b9-a045-7d1b6250e94a")
 		)
@@ -6419,6 +6217,7 @@
 			(pintype "passive")
 			(uuid "d6000773-cbb6-4c9d-96a0-b28b8c38babd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D5.0mm_P2.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6461,20 +6260,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "a7122a25-3615-4a47-8a81-0988d1892edd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -6505,7 +6290,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/e8d35bec-2d7d-487c-bb5f-59823378e64a")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6700,6 +6485,7 @@
 			(pintype "passive")
 			(uuid "d14e95a3-dff2-44ad-8846-bb61fb591f39")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6742,22 +6528,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "778bc936-b28a-49f1-8d70-45976c787dcc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -6771,7 +6543,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -6786,7 +6558,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7ad2d702-dfb7-4d49-a82d-34430dd5948f/e7d63853-abc1-4dd8-a9d5-88399b691f82")
-		(sheetname "Core Circuit")
+		(sheetname "/Core Circuit/")
 		(sheetfile "Core_Circuit.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6981,6 +6753,7 @@
 			(pintype "passive")
 			(uuid "d111d424-154c-4c22-8c59-4ffbf7457ce4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7023,20 +6796,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "3005b45d-9757-432b-a9dd-6deb491a6739")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -7067,7 +6826,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/d11565c4-c55d-4d69-a8e8-48ea349178f0")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7242,6 +7001,7 @@
 			(pintype "passive")
 			(uuid "72d2df26-d418-45c5-b355-25df5f844472")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7284,20 +7044,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "452e4f7a-1fd8-40ca-b568-b29bb47633da")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -7328,7 +7074,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/0778169d-0bf9-4bb7-902b-94bc9549741b")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7503,6 +7249,7 @@
 			(pintype "passive")
 			(uuid "bef96a16-2b8e-4e17-a212-66396a6baa91")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7534,7 +7281,7 @@
 			)
 		)
 		(property "Value" "IDC_02x05"
-			(at 1.27 -16.26 -90)
+			(at 1.27 -16.26 270)
 			(layer "B.Fab")
 			(uuid "0b3e9a26-7e28-44c2-98c8-d0f5ad665f65")
 			(effects
@@ -7545,22 +7292,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "SynthStuff:IDC-Header_2x05_P2.54mm_Vertical_Eurorack"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "eaaab332-fa52-4675-82a3-a620c6a9a8d8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -7574,7 +7307,7 @@
 			)
 		)
 		(property "Description" "IDC jack, 2x5 pins, row a carries same signals as row b."
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -7589,7 +7322,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/4a0fb5f0-ed59-46d4-b5a8-e8ac855f023a")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8035,6 +7768,7 @@
 			(pintype "passive")
 			(uuid "01f19283-7cee-4533-aaf9-12a0d690ef2d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8077,20 +7811,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "4e03bc7a-79ca-43ac-9d50-bcf7b4cb0af4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -8121,7 +7841,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/0cdf34b2-39cd-4d9e-981a-97cd34791509/ed5abd9d-f3fa-42df-881b-be08223ae1fe")
-		(sheetname "Power")
+		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9321,7 +9041,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.SilkS")
 			(uuid "e344572d-ecf3-472e-851b-b76a53cf9d37")
 		)
@@ -9332,7 +9052,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.CrtYd")
 			(uuid "1a2d9a89-69c7-465b-84cf-cedf4f6c5234")
 		)
@@ -9363,7 +9083,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.Fab")
 			(uuid "85b211c2-17d5-4144-a1e4-009735d1d51c")
 		)
@@ -9399,6 +9119,7 @@
 			(pintype "passive")
 			(uuid "f6cd815f-63b7-4174-8f0a-fd40df6bb4d6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D5.0mm_P2.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9442,22 +9163,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "720cae9d-aa5d-443b-bbb6-a7b846e3ce03")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" "http://diotec.com/tl_files/diotec/files/pdf/datasheets/zpd1"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -9471,7 +9178,7 @@
 			)
 		)
 		(property "Description" "500mW Zener Diode, DO-35"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -9499,7 +9206,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/ce3fef8b-9f1d-4178-b50b-4a046c030679/5d2d02f7-9c0f-4418-a2f3-71e5d0f05a01")
-		(sheetname "Inputs and Outputs")
+		(sheetname "/Inputs and Outputs/")
 		(sheetfile "Inputs_and_Outputs.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9756,6 +9463,7 @@
 			(pintype "passive")
 			(uuid "cd19867a-7ae3-45a4-be51-0227e3cd0845")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9798,20 +9506,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "SynthStuff:IDC-Header_2x03_P2.54mm_Vertical_BackBone"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "00eef3a9-e0d8-4ee3-9b5c-86a5b68fb403")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -9842,7 +9536,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/ce3fef8b-9f1d-4178-b50b-4a046c030679/b874ab92-623f-415d-ab0b-b320d4c3f155")
-		(sheetname "Inputs and Outputs")
+		(sheetname "/Inputs and Outputs/")
 		(sheetfile "Inputs_and_Outputs.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10244,6 +9938,7 @@
 			(pintype "passive")
 			(uuid "5dcd0a21-c78e-4a3e-b2ad-189dd43d4894")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x03_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10263,7 +9958,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "B.SilkS")
 		(uuid "de47ead9-8b5d-4bcb-ad80-ddf34a004046")
 	)
@@ -10274,7 +9969,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "0b051189-e7fd-4503-919b-ec383ba25338")
 	)
@@ -10285,7 +9980,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "0b3bbf6f-9470-4ca1-8342-62e959c0f6e5")
 	)
@@ -10296,7 +9991,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "612fae43-6bc0-441b-95e3-c408999670e6")
 	)
@@ -10307,7 +10002,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "66439026-e729-4ad2-bee8-07d76dd6dc93")
 	)
@@ -10318,7 +10013,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "68216ef3-ac98-414b-a3c2-6108c8a3548f")
 	)
@@ -10329,7 +10024,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "6c06910f-0d09-4c12-8ff3-a50342c661c4")
 	)
@@ -10340,7 +10035,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "731e395e-71e0-4eb7-b393-590a6b9af514")
 	)
@@ -10351,7 +10046,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "8586adce-b5e3-4c87-a4bc-aca55f248ac2")
 	)
@@ -10362,7 +10057,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "9f3a3c69-b84e-439a-b184-eda4af89279e")
 	)
@@ -10373,7 +10068,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "a0e83f2b-92b6-4ec1-af8d-35a83e96f26a")
 	)
@@ -10384,7 +10079,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "a8298b14-3b47-40f5-8431-22746ae71f54")
 	)
@@ -10395,7 +10090,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "aa23f247-6d0f-4eff-96f1-c7ec5c0b3841")
 	)
@@ -10406,7 +10101,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "bc063f4a-c67a-4c1b-b555-8ded07c9839c")
 	)
@@ -10417,7 +10112,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "bea3d902-870d-44c5-bef5-c7ea9d7f423e")
 	)
@@ -10428,7 +10123,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "c5ed7c6b-7544-4658-9500-f6f7ce3baa36")
 	)
@@ -10439,7 +10134,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "c839cc92-7e7c-4744-983e-85a13277d03f")
 	)
@@ -10450,7 +10145,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "cb548075-b14e-489c-b0d5-6790599f4d52")
 	)
@@ -10461,7 +10156,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "d28a0e7c-31a1-4465-92cb-b5e7df124ab4")
 	)
@@ -10472,7 +10167,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "ebc625ac-7b34-4e51-b17e-1d3a65430ff1")
 	)
@@ -10483,7 +10178,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "ebcc4747-c1cd-4e72-87b6-c5f107b59609")
 	)
@@ -10494,7 +10189,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "ee0f58a0-cd1e-44e8-897f-b1b3b15991d5")
 	)
@@ -10505,7 +10200,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "f059858a-b3c1-4058-aa87-67c05de67e60")
 	)
@@ -10516,7 +10211,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "f9d80c46-901a-470d-9bb0-2388eeca9eb9")
 	)
@@ -10527,7 +10222,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "fb56bbbf-0575-4f47-b632-bf6516dc31c2")
 	)
@@ -10538,7 +10233,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "fe91099f-a14b-432a-b7c1-7f31fceefbc7")
 	)
@@ -10549,7 +10244,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "b3c2b746-7928-4430-9218-c5517ec26bc0")
 	)
@@ -10560,7 +10255,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "User.9")
 		(uuid "00a9661b-bc4e-493a-9a57-d5b24a34753b")
 	)
@@ -11428,7 +11123,7 @@
 	(zone
 		(net 2)
 		(net_name "GND")
-		(layers "F&B.Cu")
+		(layers "F.Cu" "B.Cu")
 		(uuid "4dc47b39-f8b5-47e9-9444-6506283a4ea3")
 		(name "Ground_planes")
 		(hatch edge 0.5)
@@ -13646,4 +13341,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
