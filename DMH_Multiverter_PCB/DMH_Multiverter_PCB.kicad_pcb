@@ -1312,7 +1312,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 3.81 0 90)
 			(layer "B.SilkS")
 			(uuid "e672e5d4-044b-4c95-9014-b3d9df0ebfbb")
